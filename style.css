@@ -1,3 +1,14 @@
+@import url('https://fonts.googleapis.com/css2?family=Alice&display=swap');
+
+
+:root{
+    --cor-principal: #F0E8C2;
+    --cor-primaria-texto: #291B1A;
+    --cor-secundaria-texto: #573A37;
+    --fonte-principal: 'Alice', sans-serif;
+    line-height: 150%;
+}
+
 body {
     background-image: url(assets/bg.jpg);
     background-size: cover;
@@ -7,12 +18,28 @@ body {
     box-sizing: border-box;
     width: 800px;
     padding: 24px;
-    background-color: #F0E8C2;
+    background-color: var(--cor-principal);
     border-radius: 24px;
     margin: 48px auto;
 }
 
-
 img {
     border-radius: 16px;
+}
+
+h1{
+    line-height: 140%;
+    font-size: 40px;
+}
+
+h2{
+    font-size: 24px;
+}
+
+h1,h2{
+    color: var(--cor-primaria-texto);
+}
+
+p{
+    color: var(--cor-secundaria-texto);
 }
